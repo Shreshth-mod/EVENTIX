@@ -1,0 +1,20 @@
+{
+    "name": "eventix_grp_16",
+    "version": "1.0.0",
+    "description": "Eventix - Event Management Application",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "author": "Your Name",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "ejs": "^3.1.10",
+        "express": "^4.21.1",
+        "express-handlebars": "^7.0.7",
+        "mongodb": "^6.11.0",
+        "mongoose": "^8.8.3",
+        "nodemon": "^3.1.7"
+    }
+}

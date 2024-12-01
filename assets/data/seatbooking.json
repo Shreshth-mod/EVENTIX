@@ -1,0 +1,95 @@
+{
+    "movieDetails": {
+      "title": "Stree 2: Sarkate Ka Aatank",
+      "venue": "Cinepolis: Nexus Seawoods, Navi Mumbai",
+      "date": "09 Sep",
+      "time": "03:10 PM"
+    },
+    "showtimes": [
+      "02:05 PM",
+      "03:10 PM",
+      "04:10 PM",
+      "04:40 PM",
+      "06:15 PM",
+      "07:15 PM",
+      "08:15 PM",
+      "09:20 PM"
+    ],
+    "seatingSections": [
+      {
+        "category": "VIP",
+        "price": 520,
+        "seats": [
+          { "number": 1, "status": "available" },
+          { "number": 2, "status": "available" },
+          { "number": 3, "status": "available" },
+          { "number": 4, "status": "available" },
+          { "number": 5, "status": "available" },
+          { "number": 6, "status": "available" },
+          { "number": 7, "status": "available" },
+          { "number": 8, "status": "available" },
+          { "number": 9, "status": "available" },
+          { "number": 10, "status": "sold" },
+          { "number": 11, "status": "sold" },
+          { "number": 12, "status": "sold" },
+          { "number": 13, "status": "available" },
+          { "number": 14, "status": "available" },
+          { "number": 15, "status": "sold" }
+        ]
+      },
+      {
+        "category": "PREMIUM",
+        "price": 320,
+        "seats": [
+          { "number": 1, "status": "available" },
+          { "number": 2, "status": "available" },
+          { "number": 3, "status": "sold" },
+          { "number": 4, "status": "sold" },
+          { "number": 5, "status": "sold" },
+          { "number": 6, "status": "available" },
+          { "number": 7, "status": "sold" },
+          { "number": 8, "status": "available" },
+          { "number": 9, "status": "available" },
+          { "number": 10, "status": "available" },
+          { "number": 11, "status": "sold" },
+          { "number": 12, "status": "sold" },
+          { "number": 13, "status": "available" },
+          { "number": 14, "status": "available" },
+          { "number": 15, "status": "available" },
+          { "number": 16, "status": "sold" },
+          { "number": 17, "status": "available" },
+          { "number": 18, "status": "available" }
+        ]
+      },
+      {
+        "category": "EXECUTIVE",
+        "price": 300,
+        "seats": [
+          { "number": 1, "status": "available" },
+          { "number": 2, "status": "available" },
+          { "number": 3, "status": "available" },
+          { "number": 4, "status": "available" },
+          { "number": 5, "status": "available" },
+          { "number": 6, "status": "available" },
+          { "number": 7, "status": "available" },
+          { "number": 8, "status": "available" },
+          { "number": 9, "status": "available" },
+          { "number": 10, "status": "available" },
+          { "number": 11, "status": "available" },
+          { "number": 12, "status": "selected" },
+          { "number": 13, "status": "selected" },
+          { "number": 14, "status": "sold" },
+          { "number": 15, "status": "available" },
+          { "number": 16, "status": "available" },
+          { "number": 17, "status": "available" },
+          { "number": 18, "status": "available" }
+        ]
+      }
+    ],
+    "legend": {
+      "selected": { "color": "#4CAF50" },
+      "available": { "color": "#e5f4f6" },
+      "sold": { "color": "#ccc" }
+    }
+  }
+  

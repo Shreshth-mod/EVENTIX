@@ -1,0 +1,56 @@
+{
+    "paymentOptions": [
+      "Quickpay",
+      "Paytm/Upi",
+      "Debit/Credit Card",
+      "Netbanking",
+      "Mobile Wallet",
+      "Gift Vouchers",
+      "Redeem Points"
+    ],
+    "paymentMethods": [
+      {
+        "name": "CRED UPI",
+        "icon": "unnamed.png"
+      },
+      {
+        "name": "Google Pay",
+        "icon": "Google-Pay-India-Tez-new-icon.avif"
+      },
+      {
+        "name": "Amazon Pay",
+        "icon": "free-amazon-pay-circle-round-logo-icon-19775-thumb.png"
+      },
+      {
+        "name": "BHIM UPI",
+        "icon": "bhim_logo_2.png"
+      },
+      {
+        "name": "Paytm",
+        "icon": "channels4_profile.jpg"
+      },
+      {
+        "name": "Phone Pay",
+        "icon": "download.png"
+      },
+      {
+        "name": "Other UPI",
+        "icon": "download (1).png"
+      }
+    ],
+    "orderSummary": {
+      "movieTitle": "Stree 2: Sarkate Ka Atank (UA)",
+      "language": "Hindi",
+      "format": "2D",
+      "venue": "Cinepolis: DLF Avenue, Saket (SCREEN 2)",
+      "seats": "C5, C6",
+      "date": "Mon, 16 Sep, 2024",
+      "time": "10:40 AM",
+      "priceBreakdown": {
+        "subTotal": 640,
+        "convenienceFees": 21,
+        "totalAmount": 661
+      }
+    }
+  }
+  

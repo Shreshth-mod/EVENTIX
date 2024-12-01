@@ -1,0 +1,58 @@
+{
+"movie": {
+    "title": "Stree 2: Sarkate Ka Aatank",
+    "language": "Hindi",
+    "tags": ["COMEDY", "HORROR"],
+    "formats": [
+      { "format": "Hindi - 2D", "active": true },
+      { "format": "Hindi - 3D", "active": false }
+    ],
+    "dates": [
+      { "day": "MON", "date": "02 SEP", "active": true },
+      { "day": "TUE", "date": "03 SEP", "active": false },
+      { "day": "WED", "date": "04 SEP", "active": false },
+      { "day": "THU", "date": "05 SEP", "active": false }
+    ]
+  },
+  "theaters": [
+    {
+      "name": "INOX",
+      "features": ["M-Ticket", "Food and Beverages"],
+      "showtimes": [
+        { "time": "10:00 AM", "active": false },
+        { "time": "12:45 PM", "active": true },
+        { "time": "03:30 PM", "active": false },
+        { "time": "08:00 PM", "active": false }
+      ]
+    },
+    {
+      "name": "Cinepolis",
+      "features": ["M-Ticket", "Food and Beverages"],
+      "showtimes": [
+        { "time": "10:00 AM", "active": false },
+        { "time": "12:05 PM", "active": true },
+        { "time": "03:30 PM", "active": false },
+        { "time": "08:30 PM", "active": false }
+      ]
+    },
+    {"name": "Ambience",
+      "features": ["M-Ticket", "Food and Beverages"],
+      "showtimes": [
+        { "time": "09:10 AM", "active": false },
+        { "time": "12:45 PM", "active": true },
+        { "time": "04:30 PM", "active": false },
+        { "time": "08:00 PM", "active": false }
+      ]
+    },
+    {
+      "name": "GT",
+      "features": ["M-Ticket", "Food and Beverages"],
+      "showtimes": [
+        { "time": "10:00 AM", "active": false },
+        { "time": "12:45 PM", "active": true },
+        { "time": "03:00 PM", "active": false },
+        { "time": "07:00 PM", "active": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 1200px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Payment Options Sidebar */
+        .payment-options {
+            width: 50%;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-right: 1px solid #ddd;
+        }
+
+        .payment-options h2 {
+            background-color: #e91e1e;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .payment-options ul {
+            list-style: none;
+        }
+
+        .payment-options ul li {
+            padding: 10px;
+            background-color: #ccc;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .payment-options ul li:hover, 
+        .payment-options ul li.active {
+            background-color: #999;
+            font-weight: bold;
+        }
+
+        .payment-methods {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+        }
+
+        .payment-method {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .payment-method img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .payment-method:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Order Summary Section */
+        .order-summary {
+            width: 50%;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .order-summary h2 {
+            background-color: #e91e1e;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .order-summary .details {
+            padding: 10px;
+            background-color: #f1f1f1;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .order-summary .details p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .order-summary .price-breakdown {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .order-summary .price-breakdown .total {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .order-summary .amount-payable {
+            background-color: #e91e1e;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Payment Options Section -->
+        <div class="payment-options">
+            <h2>Payment Options</h2>
+            <ul>
+                <li>Quickpay</li>
+                <li class="active">Paytm/Upi</li>
+                <li>Debit/Credit Card</li>
+                <li>Netbanking</li>
+                <li>Mobile Wallet</li>
+                <li>Gift Vouchers</li>
+                <li>Redeem Points</li>
+            </ul>
+            <div class="payment-methods">
+                <div class="payment-method">
+                    <img src="/images/unnamed.png" alt="CRED UPI">
+                    <span>CRED UPI</span>
+                </div>
+                <div class="payment-method">
+                    <img src="/images/Google-Pay-India-Tez-new-icon.avif" alt="Google Pay">
+                    <span>Google Pay</span>
+                </div>
+                <div class="payment-method">
+                    <img src="/images/free-amazon-pay-circle-round-logo-icon-19775-thumb.png" alt="Amazon Pay">
+                    <span>Amazon Pay</span>
+                </div>
+                <div class="payment-method">
+                    <img src="/images/bhim_logo_2.png" alt="BHIM UPI">
+                    <span>BHIM UPI</span>
+                </div>
+                <div class="payment-method">
+                    <img src="/images/channels4_profile.jpg" alt="Paytm">
+                    <span>Paytm</span>
+                </div>
+                <div class="payment-method">
+                    <img src="/images/download.png" alt="Phone Pay">
+                    <span>Phone Pay</span>
+                </div>
+                <div class="payment-method">
+                    <img src="/images/download (1).png" alt="Other UPI">
+                    <span>Other UPI</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Summary Section -->
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <div class="details">
+                <p>Stree 2: Sarkate Ka Atank (UA)</p>
+                <p>Hindi, 2D</p>
+                <p>Cinepolis: DLF Avenue, Saket (SCREEN 2)</p>
+                <p>TicketNormal - C5, C6</p>
+                <p>Mon, 16 Sep, 2024 10:40 AM</p>
+            </div>
+            <div class="price-breakdown">
+                <p>Sub Total: <span style="float: right;">Rs. 640</span></p>
+                <p>+ Convenience Fees: <span style="float: right;">Rs. 21</span></p>
+                <p class="total">Amount Payable: <span style="float: right;">Rs. 661</span></p>
+            </div>
+            <div class="amount-payable">
+                Amount Payable Rs. 661
+            </div>
+        </div>
+    </div>
+    <script src="paymentpg.js"></script>
+
+</body>
+</html>

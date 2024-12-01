@@ -1,0 +1,15 @@
+<h2>Payment</h2>
+<p>Secure your spot for the best events by completing your payment.</p>
+
+<form action="/payment" method="POST">
+    <label for="card-number">Card Number:</label>
+    <input type="text" id="card-number" name="card-number" required>
+    
+    <label for="expiry-date">Expiry Date:</label>
+    <input type="month" id="expiry-date" name="expiry-date" required>
+    
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" required>
+    
+    <button type="submit">Make Payment</button>
+</form>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Selection with Background</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('/images/nh.avif'); /* Add your background image URL here */
+            background-size: cover;  /* Makes sure the image covers the whole page */
+            background-position: center; /* Center the background */
+            background-repeat: no-repeat; /* Prevent the background from repeating */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for readability */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .showtimes {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .showtime {
+            background-color: #e5f4f6;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .showtime.selected {
+            background-color: #009688;
+            color: white;
+        }
+
+        .seating-section {
+            margin-bottom: 30px;
+        }
+
+        .seat-row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .seat {
+            width: 30px;
+            height: 30px;
+            background-color: #e5f4f6;
+            border: 1px solid #ddd;
+            margin: 3px;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .seat.selected {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .seat.sold {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .seat.vip {
+            background-color: #FFC107;
+        }
+
+        .seat.premium {
+            background-color: #FF9800;
+        }
+
+        .seat.executive {
+            background-color: #FF5722;
+        }
+
+        .legend {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .legend-item span {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+
+        .pay-button {
+            text-align: right;
+        }
+
+        .pay-button button {
+            padding: 10px 20px;
+            background-color: #f44336;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .pay-button button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Stree 2: Sarkate Ka Aatank</h2>
+        <p>Cinepolis: Nexus Seawoods, Navi Mumbai | Today, 09 Sep, 03:10 PM</p>
+
+        <div class="showtimes">
+            <div class="showtime">02:05 PM</div>
+            <div class="showtime selected">03:10 PM</div>
+            <div class="showtime">04:10 PM</div>
+            <div class="showtime">04:40 PM</div>
+            <div class="showtime">06:15 PM</div>
+            <div class="showtime">07:15 PM</div>
+            <div class="showtime">08:15 PM</div>
+            <div class="showtime">09:20 PM</div>
+        </div>
+
+        <div class="seating-section">
+            <h3>Rs. 520 VIP</h3>
+            <div class="seat-row">
+                <div class="seat vip">1</div>
+                <div class="seat vip">2</div>
+                <div class="seat vip">3</div>
+                <div class="seat vip">4</div>
+                <div class="seat vip">5</div>
+                <div class="seat vip">6</div>
+                <div class="seat vip">7</div>
+                <div class="seat vip">8</div>
+                <div class="seat vip">9</div>
+                <div class="seat vip sold">10</div>
+                <div class="seat vip sold">11</div>
+                <div class="seat vip sold">12</div>
+                <div class="seat vip">13</div>
+                <div class="seat vip">14</div>
+                <div class="seat vip sold">15</div>
+            </div>
+        </div>
+
+        <div class="seating-section">
+            <h3>Rs. 320 PREMIUM</h3>
+            <div class="seat-row">
+                <div class="seat premium">1</div>
+                <div class="seat premium">2</div>
+                <div class="seat premium sold">3</div>
+                <div class="seat premium sold">4</div>
+                <div class="seat premium sold">5</div>
+                <div class="seat premium">6</div>
+                <div class="seat premium sold">7</div>
+                <div class="seat premium">8</div>
+                <div class="seat premium">9</div>
+                <div class="seat premium">10</div>
+                <div class="seat premium sold">11</div>
+                <div class="seat premium sold">12</div>
+                <div class="seat premium">13</div>
+                <div class="seat premium">14</div>
+                <div class="seat premium">15</div>
+                <div class="seat premium sold">16</div>
+                <div class="seat premium">17</div>
+                <div class="seat premium">18</div>
+            </div>
+        </div>
+
+        <div class="seating-section">
+            <h3>Rs. 300 EXECUTIVE</h3>
+            <div class="seat-row">
+                <div class="seat executive">1</div>
+                <div class="seat executive">2</div>
+                <div class="seat executive">3</div>
+                <div class="seat executive">4</div>
+                <div class="seat executive">5</div>
+                <div class="seat executive">6</div>
+                <div class="seat executive">7</div>
+                <div class="seat executive">8</div>
+                <div class="seat executive">9</div>
+                <div class="seat executive">10</div>
+                <div class="seat executive">11</div>
+                <div class="seat executive selected">12</div>
+                <div class="seat executive selected">13</div>
+                <div class="seat executive sold">14</div>
+                <div class="seat executive">15</div>
+                <div class="seat executive">16</div>
+                <div class="seat executive">17</div>
+                <div class="seat executive">18</div>
+            </div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <span class="seat" style="background-color: #4CAF50;"></span> Selected
+            </div>
+            <div class="legend-item">
+                <span class="seat" style="background-color: #e5f4f6;"></span> Available
+            </div>
+            <div class="legend-item">
+                <span class="seat sold"></span> Sold
+            </div>
+        </div>
+
+        <!-- Form to submit on Pay click -->
+        <div class="pay-button">
+            <form action="/payment" method="GET">
+                <button type="submit">Pay</button>
+            </form>
+        </div>
+    </div>
+    <script src="seatbookingpg.js"></script>
+
+</body>
+</html>

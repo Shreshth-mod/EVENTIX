@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create an Account</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      width: 900px;
+      height: 600px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-section {
+      flex: 1;
+      background-image: url('/images/sam.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .form-section {
+      flex: 1;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .form-section h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    .input-field {
+      margin-bottom: 20px;
+    }
+
+    .input-field label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .input-field input {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 5.5px;
+      background-color: #e0e0e0;
+      font-size: 16px;
+    }
+
+    .continue-btn {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 25px;
+      background-color: rgba(219, 20, 20, 0.845);
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-section"></div>
+    <div class="form-section">
+      <h1>Create an account</h1>
+      <!-- Redirects to 'nextpage.html' when the form is submitted -->
+      <form action="/create-account" method="post">
+        <div class="input-field">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullName" placeholder="Full Name">
+        </div>
+        <div class="input-field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Email Address">
+        </div>
+        <div class="input-field">
+          <label for="phone">Phone no.</label>
+          <input type="tel" id="phone" name="phone" placeholder="Phone no.">
+        </div>
+        <div class="input-field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Password">
+        </div>
+        <button type="submit" class="continue-btn">Continue</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
